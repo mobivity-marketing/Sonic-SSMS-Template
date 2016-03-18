@@ -4,6 +4,7 @@ $sonicRed: #ec1c2e;
 $sonicBlue: #005caa;
 $sonicBlueDark: #3b4e60;
 $gutter: 20px;
+$box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
 
 // Global
 
@@ -12,18 +13,19 @@ $gutter: 20px;
 html, body {
 	width: 100%;
 	height: 100%;
+	background: url(../images/clouds-background.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	color: $sonicBlueDark;
+	text-align: center;
 }
 
-body { 
-  background: url(../images/clouds-background.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  color: $sonicBlueDark;
-  text-align: center;
+.container {
+	max-width: 414px;
 }
 
 section {
@@ -56,7 +58,7 @@ p {
 	margin-top: $gutter;
 
 	.sonicLogo {
-		max-width: 120px;
+		max-width: 200px;
 	}
 
 }
@@ -86,8 +88,13 @@ p {
 
 #offerImage {
 
+	margin: 0px auto;
+	text-align: center;
+	width: 80%;
+
 	.offerImage {
 		max-width: 200px;
+		max-width: 100%;
 	}
 
 }
@@ -109,15 +116,15 @@ p {
 	a {
 		text-decoration: none;
 		text-transform: uppercase;
-		font-size: 24px;
+		font-size: 18px;
 		font-weight: 700;
 		color: #fff;
 		background: $sonicRed;
-		padding: $gutter/2 $gutter;
+		padding: $gutter/4 $gutter/2;
 		border-radius: 4px;
-		-webkit-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.35);
-		-moz-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.35);
-		box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.35);
+		-webkit-box-shadow: $box-shadow;
+		-moz-box-shadow: $box-shadow;
+		box-shadow: $box-shadow;
 	}
 
 }
@@ -129,6 +136,7 @@ p {
 	p {
 		color: $sonicRed;
 		font-size: 14px;
+		font-weight: 700;
 	}
 
 }
@@ -177,7 +185,7 @@ p {
 		border-radius: 25px;
 		background: $sonicBlue;
 		font-size: 14px;
-		line-height: 22px;
+		line-height: 24px;
 	}
 
 }
@@ -204,7 +212,7 @@ p {
 		padding: 4px 20px;
 		text-decoration: none;
 		width: 70px;
-		box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+		box-shadow: $box-shadow;
 		margin: 0px auto;
 	}
 
